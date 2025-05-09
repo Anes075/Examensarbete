@@ -1,0 +1,40 @@
+.hero{
+    height: 100vh;
+    background: linear-gradient(180deg, whitesmoke, #00000088 80%);
+    display: flex;
+    flex-direction: column;
+}
+.hero-top{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hero-bottom{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 30%;
+    margin: 0 auto;
+}
+.hero-bottom h2{
+    color: #111111;
+    font-size: 60px;
+}
+.hero-bottom p{
+    color: #111111;
+    font-size: 30px;
+    margin: 1vh;
+}
+.hero-bottom button{
+    color: #111111;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    height: 70px;
+    background-color: whitesmoke;
+    margin: 2vh;
+}
