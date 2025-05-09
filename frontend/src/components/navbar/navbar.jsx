@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 import './navbar.css';
 {/* import logo from '../assets/logo*/}
 
@@ -17,9 +18,9 @@ const Navbar = () => {
             </div>
 
             <ul className="navbar-menu">
-                <li onClick={()=>{setMenu("shop")}}>Shop {menu==="shop"?<hr/>:<></>} </li>
-                <li onClick={()=>{setMenu("men")}}>Men {menu==="men"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("women")}}>Women {menu==="women"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("shop")}}><Link to='/'>Shop</Link> {menu==="shop"?<hr/>:<></>} </li>
+                <li onClick={()=>{setMenu("mens")}}><Link to='/mens'>Mens</Link> {menu==="mens"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("womens")}}><Link to='/womens'>Womens</Link> {menu==="womens"?<hr/>:<></>}</li>
             </ul>
 
             <div className="navbar-searchBar-cart">
@@ -27,7 +28,8 @@ const Navbar = () => {
                     <input type="text" id="searchBar" name="searchBar" placeholder={"search"} />
                 </form>
 
-                {/* Font awesome shopping bag icon */}
+                {/* Shopping Cart logo */}
+                <Link to='/cart'><button>Cart</button></Link>
                 <div className="navbar-cart-counter">0</div>
             </div>
 

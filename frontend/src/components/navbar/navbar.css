@@ -3,6 +3,7 @@
     justify-content: space-around;
     padding: 10px;
     box-shadow: 0 1px 3px -1px black;
+    background-color: #10509a;
 }
 
 .navbar-logo{
@@ -14,7 +15,7 @@
     font-family: monospace;
     font-size: 30px;
     font-weight: 600;
-    color: #0f0f0f;
+    color: whitesmoke;
 }
 
 .navbar-menu{
@@ -32,12 +33,13 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: whitesmoke;
 }
 .navbar-menu hr{
     border: none;
     width: 80%;
     height: 3px;
-    background: #0f0f0f;
+    background: whitesmoke;
 }
 
 .navbar-searchBar-cart{
