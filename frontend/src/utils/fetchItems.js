@@ -15,7 +15,8 @@ export async function fetchItems() {
     itemsArray.push(items[property]);
   }
 
-  console.log(itemsArray);
+   /* console.log(itemsArray); */
 
-  return itemsArray;
+    return itemsArray;
 }
+

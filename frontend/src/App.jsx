@@ -4,13 +4,9 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Shop from './pages/shop';
 import ShopCategory from './pages/shopCategory';
 import Product from './pages/product';
-import Cart from './pages/cart'
-import { fetchItems } from './utils/fetchItems';
+import Cart from './pages/cart';
 
 function App() {
-
-  fetchItems();
-  
 
   return (
     <div>
