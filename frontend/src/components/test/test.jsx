@@ -20,11 +20,12 @@ const Test = () => {
 
     return (
         <div className="test">
-            <h1>Test</h1>
-            <div>
+            <h2>Test</h2>
+            <hr/>
+            <div className="test-item">
                 {shopItems.map((i)=>{
-                   /* console.log(i.id); */
-                    return <Item key={i} id={i.id} name={i.name} image={i.image} price={i.price}/>
+                   console.log(i.id);
+                    return <Item key={i.id} id={i.id} name={i.name} image={i.image} price={i.price}/>
                 })}
             </div>
         </div>
