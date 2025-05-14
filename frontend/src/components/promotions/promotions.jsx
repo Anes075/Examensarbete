@@ -1,21 +1,33 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./promotions.css";
+import { fetchItems } from "../../utils/fetchItems"; 
 
 const Promotions = () => {
+
+    const [promotions, setPromotions] = useState([]);
+    const url = "https://examen-databas-default-rtdb.europe-west1.firebasedatabase.app/promotions/.json";
+    
+        useEffect(() => {
+            fetchItems(url)                                        
+                .then((promotionsArray) => {                    
+                    setPromotions(promotionsArray);
+                })
+        }, []);
+
     return (
         <div className="promotions">
-            <div className="promotions-left">
-                <img src="#" alt="" />
-                <h3>Clothes Left</h3>
-                <button>Shop Now</button>
-            </div>
+            <div className="promotions-item">
+                <div className="promotions-image-container">
+                {promotions.map((i)=>{
+                return <img key={i.id} src={i.image} alt="Promotion"/>
+                })}
 
-            <div className="promotions-right">
-                <img src="#" alt="" />
-                <h3>Clothes Right</h3>
+                </div>
+                <h3>Late Spring Sale - 15% Discount on Jackets</h3>
                 <button>Shop Now</button>
             </div>
         </div>
+        
     )
 }
 

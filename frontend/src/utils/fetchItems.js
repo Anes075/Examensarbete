@@ -1,11 +1,7 @@
 export async function fetchItems(url) {
 
   const response = await fetch(url);
-
-
   const items = await response.json();
-
-
   const itemsArray = [];
 
   for (const property in items) {

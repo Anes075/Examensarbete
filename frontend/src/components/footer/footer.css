@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background-color: #10509a;
+    padding-top: 10vh;
 }
 
 .footer-logo{
@@ -21,22 +23,19 @@
     display: flex;
     list-style: none;
     gap: 50px;
-    color: #111111;
-    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 25px;
 }
 .footer-links li{
     cursor: pointer;
-
 }
 
 .footer-social-icons{
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 .footer-icons-container{
     padding: 10px;
-    padding-bottom: 6px;
-    background: #10509a;
-    border: 1px solid whitesmoke;
 }
