@@ -1,0 +1,40 @@
+.promotions{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    margin: auto;
+    background-color: red;
+}
+
+.promotions-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.promotions-left h3{
+    color: #111111;
+    font-size: 20px;
+    font-weight: 600;
+}
+.promotions-left button{
+    border: none;
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.promotions-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.promotions-right button{
+    border: none;
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
