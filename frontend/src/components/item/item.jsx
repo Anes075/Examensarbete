@@ -3,8 +3,10 @@ import './item.css';
 
 const Item = (props) => {
     return (
-    <div className="Item">
-        <img src={props.image} alt={props.image} />
+    <div className="item">
+        <div className="product-image-container">
+        <img src={props.image} alt="product image" />
+        </div>
         <p>{props.name}</p>
         <p>{props.price} kr</p>
     </div>

@@ -1,6 +1,4 @@
-export async function fetchItems() {
-
-  const url = "https://database-22220-default-rtdb.europe-west1.firebasedatabase.app/.json";
+export async function fetchItems(url) {
 
   const response = await fetch(url);
 

@@ -8,9 +8,10 @@ import Item from "../item/item";
 const Test = () => {
     
     const [shopItems, setShopItems] = useState([]);
+    const url = "https://examen-databas-default-rtdb.europe-west1.firebasedatabase.app/collections/.json";
 
     useEffect(() => {
-        fetchItems()                                        
+        fetchItems(url)                                        
             .then((itemsListArray) => {                    
                 setShopItems(itemsListArray);
             })
