@@ -1,13 +1,13 @@
 import React from "react";
 import Hero from "../components/hero/hero";
-import Test from "../components/test/test";
+import Latest from "../components/latest/latest";
 import Promotions from "../components/promotions/promotions";
 
 const Shop = () => {
     return(
         <div>
             <Hero/>
-            <Test/>
+            <Latest/>
             <Promotions/>
         </div>
     )

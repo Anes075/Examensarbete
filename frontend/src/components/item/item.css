@@ -18,8 +18,8 @@
 }
 
 .product-image-container{
-    display: grid;
-    grid-template-rows: 4fr;
+    overflow: hidden;
+    max-height: 350px;
 }
 
 .product-image-container img{
