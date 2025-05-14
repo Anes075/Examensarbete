@@ -13,8 +13,7 @@ const Navbar = () => {
         <div className='navbar'>
 
             <div className='navbar-logo'>
-                <img src={"null"} alt="" /> {/* Logo image */}
-                <p>Butik</p>
+                <p>Examen Store</p>
             </div>
 
             <ul className="navbar-menu">
