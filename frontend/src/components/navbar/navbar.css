@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    box-shadow: 0 1px 3px -1px black;
-    background-color: #10509a;
+    box-shadow: 0 1px 3px -1px #000000;
+    background-color: #133459;
     height: 5vh;
 }
 
@@ -16,8 +16,8 @@
     font-family: "Permanent Marker";
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
-    color: whitesmoke;
+    font-size: 40px;
+    color: #f5f5f5;
 }
 
 .navbar-menu{
@@ -35,13 +35,13 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: whitesmoke;
+    color: #f5f5f5;
 }
 .navbar-menu hr{
     border: none;
     width: 80%;
     height: 3px;
-    background: whitesmoke;
+    background: #f5f5f5;
 }
 
 .navbar-searchBar-cart{
@@ -52,7 +52,7 @@
 .navbar-searchBar-cart input{
     height: 20px;
     width: 300px;
-    border: 1px solid gray;
+    border: 1px solid #808080;
     border-radius: 25px;
 }
 
@@ -64,6 +64,6 @@
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    background:red;
-    color: white;
+    background:#c80000;
+    color: #f5f5f5;
 }
