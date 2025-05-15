@@ -1,36 +1,34 @@
 import React from "react";
-import './footer.css';
+import "./footer.css";
 
 const Footer = () => {
-    return (
+  return (
     <div className="footer">
+      <div className="footer-logo">
+        <p>Examen Store</p>
+      </div>
 
-        <div className="footer-logo">
-            <p>Examen Store</p>
+      <ul className="footer-links">
+        <li>Products</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <div className="footer-social-icons">
+        <div className="footer-icons-container">
+          <img src="#" alt="Instagram" />
         </div>
 
-        <ul className="footer-links">
-            <li>Products</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-
-        <div className="footer-social-icons">
-
-            <div className="footer-icons-container">
-                <img src="#" alt="Instagram" />
-            </div>
-
-            <div className="footer-icons-container">
-                <img src="#" alt="Facebook" />
-            </div>
-
-            <div className="footer-icons-container">
-                <img src="#" alt="X" />
-            </div>
+        <div className="footer-icons-container">
+          <img src="#" alt="Facebook" />
         </div>
+
+        <div className="footer-icons-container">
+          <img src="#" alt="X" />
+        </div>
+      </div>
     </div>
-    )
-}
+  );
+};
 
 export default Footer;
