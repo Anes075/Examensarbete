@@ -6,7 +6,7 @@ export const ShopContext = createContext(null);
     const ShopContextProvider = (props) =>{
 
         const [allProducts, setAllProducts] = useState([]);
-        const url = "https://examen-databas-default-rtdb.europe-west1.firebasedatabase.app/all-items/.json";
+        const url = "https://examen-databas-default-rtdb.europe-west1.firebasedatabase.app/all-products/.json";
     
             useEffect(() => {
                 fetchItems(url)                                        

@@ -4,6 +4,7 @@
     flex-direction: column;
     overflow: hidden;
     width: 90vw;
+    min-width: 1500px;
     margin-left: auto;
     margin-right: auto;
 }
