@@ -36,6 +36,9 @@
     justify-content: center;
     cursor: pointer;
     color: #f5f5f5;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 .navbar-menu hr{
     border: none;

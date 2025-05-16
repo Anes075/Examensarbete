@@ -25,6 +25,9 @@
     color: #111111;
     font-size: 20px;
     font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 .promotions-item button{
     border: none;

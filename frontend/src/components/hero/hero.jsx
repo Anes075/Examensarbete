@@ -21,7 +21,7 @@ const Hero = () => {
         })}
       </div>
 
-      <div className="hero-bottom">
+      <div className="hero-text-container">
         <h2>Force Majeure</h2>
         <p>New Collections</p>
 
