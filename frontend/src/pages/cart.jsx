@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartItems from "../components/cartItems/cartItems";
 
 const Cart = () => {
-  return <div></div>;
+  return (
+    <div>
+      <CartItems />
+    </div>
+  );
 };
 
 export default Cart;
