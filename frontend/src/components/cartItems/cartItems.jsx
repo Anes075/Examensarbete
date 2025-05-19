@@ -3,8 +3,9 @@ import "./cartItems.css";
 import { ShopContext } from "../../context/ShopContext";
 
 const CartItems = () => {
-  const { getTotalCartSum, allProducts, CartItems, removeFromCart } =
+  const { getTotalCartSum, allItems, CartItems, removeFromCart } =
     useContext(ShopContext);
+  console.log(allItems);
   return (
     <div className="cart-items">
       <div className="cart-items-format-top">
@@ -15,13 +16,13 @@ const CartItems = () => {
         <p>Remove</p>
       </div>
       <hr />
-      {allProducts.map((i) => {
+      {allItems.map((i) => {
         if (CartItems[i.id] > 0) {
           return (
             <div>
               <div className="cart-items-format">
                 <img src={i.image} alt="" className="product-image-icon" />
-                <p>i.name</p>
+                <p>{i.name}</p>
                 <p>{i.price} kr</p>
                 <button className="cart-items-quantity">
                   {CartItems[i.id]}
