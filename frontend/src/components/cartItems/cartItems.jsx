@@ -3,7 +3,7 @@ import "./cartItems.css";
 import { ShopContext } from "../../context/ShopContext";
 
 const CartItems = () => {
-  const { getTotalCartSum, allItems, CartItems, removeFromCart } =
+  const { getTotalCartSum, allItems, cartItems, removeFromCart } =
     useContext(ShopContext);
   console.log(allItems);
   return (
@@ -17,7 +17,7 @@ const CartItems = () => {
       </div>
       <hr />
       {allItems.map((i) => {
-        if (CartItems[i.id] > 0) {
+        if (cartItems[i.id] > 0) {
           return (
             <div>
               <div className="cart-items-format">
