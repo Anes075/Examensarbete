@@ -3,7 +3,8 @@ import "./cartItems.css";
 import { ShopContext } from "../../context/ShopContext";
 
 const CartItems = () => {
-  const { allProducts, CartItems, removeFromCart } = useContext(ShopContext);
+  const { getTotalCartSum, allProducts, CartItems, removeFromCart } =
+    useContext(ShopContext);
   return (
     <div className="cart-items">
       <div className="cart-items-format-top">
@@ -40,7 +41,27 @@ const CartItems = () => {
         }
         return null;
       })}
-      <div className="cart-items-down"></div>
+      <div className="cart-items-down">
+        <div className="cart-items-total">
+          <h1>Cart Totals</h1>
+          <div>
+            <div className="cart-items-total-item">
+              <p>Subtotal</p>
+              <p>{getTotalCartSum()} kr</p>
+            </div>
+            <hr />
+            <div className="cart-items-total-item">
+              <p>Shipping Fee</p>
+            </div>
+            <hr />
+            <div className="cart-items-total-item">
+              <h2>Total</h2>
+              <h2>{getTotalCartSum()} kr</h2>
+            </div>
+          </div>
+          <button>Proceed to Checkout</button>
+        </div>
+      </div>
     </div>
   );
 };
