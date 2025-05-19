@@ -91,3 +91,20 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
 }
+.delivery-information{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+.delivery-information h2{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+.delivery-form div{
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+}
+
