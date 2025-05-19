@@ -5,13 +5,14 @@ import { ShopContext } from "../../context/ShopContext";
 const CartItems = () => {
   const { getTotalCartSum, allItems, cartItems, removeFromCart } =
     useContext(ShopContext);
-  console.log(allItems);
+
   return (
     <div className="cart-items">
       <div className="cart-items-format-top">
-        <p>Quantity</p>
-        <p>Size</p>
+        <p>Products</p>
+        <p>Title</p>
         <p>Price</p>
+        <p>Quantity</p>
         <p>Total</p>
         <p>Remove</p>
       </div>
@@ -19,16 +20,17 @@ const CartItems = () => {
       {allItems.map((i) => {
         if (cartItems[i.id] > 0) {
           return (
-            <div>
+            <div key={i.id}>
               <div className="cart-items-format">
                 <img src={i.image} alt="" className="product-image-icon" />
                 <p>{i.name}</p>
                 <p>{i.price} kr</p>
                 <button className="cart-items-quantity">
-                  {CartItems[i.id]}
+                  {cartItems[i.id]}
                 </button>
-                <p>{i.price * CartItems[i.id]} kr</p>
+                <p>{i.price * cartItems[i.id]} kr</p>
                 <button
+                  className="cart-items-remove"
                   onClick={() => {
                     removeFromCart(i.id);
                   }}
