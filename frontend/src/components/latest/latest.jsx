@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchItems } from "../../utils/fetchItems";
-import "./latest.css";
+import "./Latest.css";
 import Item from "../item/item";
 
 const Latest = () => {

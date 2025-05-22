@@ -1,11 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar/navbar";
-import Footer from "./components/footer/footer";
-import Shop from "./pages/shop";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Shop from "./pages/Shop";
 import ShopCategory from "./pages/shopCategory";
-import Product from "./pages/product";
-import Cart from "./pages/cart";
+import Product from "./pages/Product";
+import Cart from "./pages/Cart";
 
 function App() {
   return (

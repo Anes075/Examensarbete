@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./hero.css";
+import "./Hero.css";
 import { fetchItems } from "../../utils/fetchItems";
 
 const Hero = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./breadcrumb.css";
+import "./Breadcrumb.css";
 
 const Breadcrumb = (props) => {
   const { product } = props;
