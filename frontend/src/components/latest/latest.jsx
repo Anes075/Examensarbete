@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchItems } from "../../utils/fetchItems";
 import "./Latest.css";
-import Item from "../item/item";
+import Item from "../Item/Item";
 
 const Latest = () => {
   const [shopItems, setShopItems] = useState([]);
