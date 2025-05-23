@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./css/ShopCategory.css";
-import { ShopContext } from "../context/shopContext";
+import { ShopContext } from "../context/ShopContext";
 import Item from "../components/Item/Item";
 
 const ShopCategory = (props) => {
@@ -8,16 +8,6 @@ const ShopCategory = (props) => {
 
   return (
     <div className="shop-category">
-      <div className="shop-category-index">
-        <p>
-          <span>Listing X-Y out of Z products</span>
-        </p>
-
-        <div className="shop-category-sort">
-          <p>Sort By</p>
-        </div>
-      </div>
-
       <div className="shop-category-products">
         {allProducts.map((i) => {
           if (props.category === i.category) {
