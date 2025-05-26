@@ -1,4 +1,3 @@
-// This is your test secret API key.
 const stripe = require('stripe')('sk_test_51RR8M6I6eUCMULgBYt7wJopNrPj1FbBNqJHeOhOSY5yr7x7qK2bBbxkKjsFpz6EJu8Lxf5C0UL8fMX8ceiOb2kBJ004uYBeGSu');
 const express = require('express');
 const app = express();
@@ -11,7 +10,6 @@ app.post('/create-checkout-session', async (req, res) => {
     ui_mode: 'embedded',
     line_items: [
       {
-        // Provide the exact Price ID (for example, price_1234) of the product you want to sell
         price: "price_1RSwpXI6eUCMULgB4U46M1iS",
         quantity: 1,
       },
