@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Promotions.css";
+import "./promotions.css";
 import { fetchItems } from "../../utils/fetchItems";
 
 const Promotions = () => {

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./ProductDisplay.css";
+import "./productDisplay.css";
 import { ShopContext } from "../../context/ShopContext";
 
 const ProductDisplay = (props) => {

@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "../components/Hero/Hero";
-import Latest from "../components/Latest/Latest";
-import Promotions from "../components/Promotions/Promotions";
+import Hero from "../components/hero/hero";
+import Latest from "../components/latest/latest";
+import Promotions from "../components/promotions/promotions";
 
 const Shop = () => {
   return (

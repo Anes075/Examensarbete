@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import "./CartItems.css";
+import "./cartItems.css";
 import { ShopContext } from "../../context/ShopContext";
 
 const CartItems = () => {
