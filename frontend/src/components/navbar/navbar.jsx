@@ -10,7 +10,10 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <p>Examen Store</p>
+        <Link style={{ textDecoration: "none" }} to={"/"}>
+          <p>Examen Store</p>
+          {menu === "shop" ? <></> : <></>}{" "}
+        </Link>
       </div>
 
       <ul className="navbar-menu">

@@ -14,6 +14,8 @@ export const ShopContext = createContext(null);
 const url =
   "https://examen-databas-default-rtdb.europe-west1.firebasedatabase.app/all-products/.json";
 
+/*console.log(allItems);*/
+
 const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
   const [allProducts, setAllProducts] = useState([]);
