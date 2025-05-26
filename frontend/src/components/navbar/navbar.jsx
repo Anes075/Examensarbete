@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { ShopContext } from "../../context/ShopContext";
+import shopping_bag_icon from "../../assets/shopping_bag_icon.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
@@ -62,9 +63,8 @@ const Navbar = () => {
           />
         </form>
 
-        {/* Shopping Cart logo */}
         <Link to="/cart">
-          <button>Cart</button>
+          <img src={shopping_bag_icon} alt="Cart" />
         </Link>
         <div className="navbar-cart-counter">{getTotalCartItems()}</div>
       </div>
