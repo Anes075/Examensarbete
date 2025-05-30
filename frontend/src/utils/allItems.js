@@ -23,9 +23,9 @@ let allItems =[
   {
     "category": "men",
     "id": 3,
-    "image": "https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "name": "Nike Air",
-    "price": 899
+    "image": "https://images.unsplash.com/photo-1675877879221-871aa9f7c314?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Leather Jacket",
+    "price": 699
   },
   {
     "category": "women",
@@ -47,6 +47,27 @@ let allItems =[
     "image": "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "name": "Oragne Shirt",
     "price": 299
+  },
+  {
+    "category": "men",
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1605794432120-f4bb5dc9067d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Striped Lines Shirt",
+    "price": 329
+  },
+  {
+    "category": "men",
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1599577308292-48e4a8b7e739?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Red Shirt",
+    "price": "279"
+  },
+  {
+    "category": "men",
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1618453292459-53424b66bb6a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "LSKD.KO Black Shirt",
+    "price": 379
   }
 ]
 

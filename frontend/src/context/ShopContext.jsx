@@ -34,6 +34,7 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
+  /* retrives the sum value for every object that has a value above 0 */
   const getTotalCartSum = () => {
     let totalSum = 0;
     for (const item in cartItems) {
@@ -45,6 +46,7 @@ const ShopContextProvider = (props) => {
     }
   };
 
+  /* displays the total amount of items in the cart */
   const getTotalCartItems = () => {
     let totalItem = 0;
     for (const item in cartItems) {
